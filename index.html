@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Les Mis Quiz · Milbourn Music</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Les Mis Quiz</h1>
+  </header>
+
+  <main class="container">
+    <!-- START SCREEN -->
+    <section id="screen-start" class="screen">
+      <p>Reorder the songs into the correct show order.</p>
+      <button id="startBtn">Start Quiz</button>
+    </section>
+
+    <!-- QUIZ SCREEN -->
+    <section id="screen-quiz" class="screen hidden">
+      <div class="lists">
+        <!-- Number gutter -->
+        <ul id="numberGutter" class="gutter"></ul>
+        <!-- Draggable list -->
+        <ul id="songList" class="song-list" aria-label="Reorder songs by dragging"></ul>
+      </div>
+
+      <div class="buttons">
+        <button id="homeBtn" class="secondary">Home</button>
+        <button id="checkBtn">Check Order</button>
+        <button id="resetBtn" class="secondary">Reset</button>
+      </div>
+    </section>
+
+    <!-- CELEBRATE SCREEN -->
+    <section id="screen-celebrate" class="screen hidden">
+      <p class="celebrate">Perfect Order!</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><small>© <span id="year"></span> Milbourn Music</small></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
